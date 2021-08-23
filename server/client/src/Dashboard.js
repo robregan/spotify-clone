@@ -27,7 +27,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get("https://spotify-w-lyrics.herokuapp.com/callback.lyrics", {
+      .get("https://spotify-w-lyrics.herokuapp.com/callback/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
